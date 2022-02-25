@@ -10,10 +10,6 @@ app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)
 
-app.get('/home' , (req,res)=> {
-    res.send("Hi Task App")
-})
-
 app.listen(port , () => {
     console.log('Server running on port ' + port + '....')
 })
