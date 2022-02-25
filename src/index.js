@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(userRouter)
 app.use(taskRouter)
 
-app.get('/' , (req,res)=> {
+app.get('/home' , (req,res)=> {
     res.send("Hi Task App")
 })
 
